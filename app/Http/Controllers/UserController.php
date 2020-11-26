@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreUserRequest;
+use App\Services\UserServiceInterface;
 use Illuminate\Http\Request;
-use Services\UserServiceInterface;
 
 class UserController extends Controller
 {
@@ -12,19 +13,17 @@ class UserController extends Controller
         return $userService->listUsers($request->get('name'), $request->get('email'));
     }
 
-    public function store(Request $request, UserServiceInterface $userService)
+    public function store(StoreUserRequest $request, UserServiceInterface $userService)
     {
-        $request->validate([
-            'name' => 'required|string|min:4|max:255',
-            'email' => 'required|email|min:4|max:255',
-            'password' => 'required|string|min:4|max:20'
-        ]);
-
-        return $userService->createUser(
+        $user = $userService->createUser(
             $request->get('name'),
             $request->get('email'),
             $request->get('password')
         );
+
+        return response()->json([
+            "data" => $user
+        ], 200);
     }
 
     public function activate(int $userId, UserServiceInterface $userService)
@@ -34,8 +33,10 @@ class UserController extends Controller
         return response()->json([], 200);
     }
 
-    public function deactivate()
+    public function deactivate(int $userId, UserServiceInterface $userService)
     {
+        $userService->activation($userId, false);
 
+        return response()->json([], 200);
     }
 }

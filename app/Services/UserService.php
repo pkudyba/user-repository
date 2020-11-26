@@ -1,6 +1,6 @@
 <?php
 
-namespace Services;
+namespace App\Services;
 
 use App\Models\User;
 
@@ -28,13 +28,13 @@ class UserService implements UserServiceInterface
             ->paginate();
     }
 
-    public function activation(User $user, bool $active): User
+    public function activation(int $userId, bool $active): User
     {
+        $user = User::findOrFail($userId);
         $user->update([
             "is_active" => $active,
         ]);
 
         return $user;
     }
-
 }
