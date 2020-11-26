@@ -1,0 +1,17 @@
+name: Zadanie 
+recipe: laravel
+config:
+  php: '7.3'
+  via: apache
+  webroot: ./public
+  database: mysql:5.7
+  cache: redis
+  xdebug: false
+services:
+  database:
+    portforward: 37001
+  phpMyAdmin:
+    type: phpmyadmin
+    hosts:
+      - database
+    portforward: 32792
