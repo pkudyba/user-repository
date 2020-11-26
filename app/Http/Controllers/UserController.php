@@ -10,7 +10,12 @@ class UserController extends Controller
 {
     public function index(Request $request, UserServiceInterface $userService)
     {
-        return $userService->listUsers($request->get('name'), $request->get('email'));
+        return $userService->listUsers(
+            $request->get('name'),
+            $request->get('email'),
+            $request->get('order_column', 'id'),
+            $request->get('order_direction', 'asc')
+        );
     }
 
     public function store(StoreUserRequest $request, UserServiceInterface $userService)
@@ -18,7 +23,7 @@ class UserController extends Controller
         $user = $userService->createUser(
             $request->get('name'),
             $request->get('email'),
-            $request->get('password')
+            $request->get('password'),
         );
 
         return response()->json([

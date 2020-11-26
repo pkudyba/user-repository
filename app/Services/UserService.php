@@ -20,8 +20,13 @@ class UserService implements UserServiceInterface
         return $user;
     }
 
-    public function listUsers(?string $name, ?string $email)
-    {
+    public function listUsers(
+        ?string $name,
+        ?string $email,
+        string $orderColumn,
+        string $orderDirection,
+        int $pageNumber = 1
+    ) {
         return User::query()
             ->when(!empty($name), function ($query) use ($name) {
                 $query->where('name', 'LIKE', "%{$name}%");
@@ -29,7 +34,8 @@ class UserService implements UserServiceInterface
             ->when(!empty($email), function ($query) use ($email) {
                 $query->where('name', 'LIKE', "%{$email}%");
             })
-            ->paginate();
+            ->orderBy($orderColumn, $orderDirection)
+            ->paginate(50, ['*'], 'page', $pageNumber);
     }
 
     public function activation(int $userId, bool $active): User

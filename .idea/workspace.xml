@@ -130,7 +130,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Console/Commands" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -138,6 +138,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Console/Commands" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -159,7 +160,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606379356607</updated>
-      <workItem from="1606379357672" duration="7203000" />
+      <workItem from="1606379357672" duration="10460000" />
     </task>
     <servers />
   </component>
@@ -167,6 +168,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1476" y="50" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606387133577">
+      <screen x="0" y="0" width="3440" height="1440" />
+    </state>
+    <state x="1476" y="50" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.3440.1440/3440.0.2560.1440/-1440.540.1440.900@0.0.3440.1440" timestamp="1606387133577" />
     <state x="1458" y="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606384958693">
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
@@ -182,9 +187,9 @@
     </state>
     <state width="524" height="445" key="SwitcherDM/0.0.3440.1440/3440.0.2560.1440/-1440.540.1440.900@0.0.3440.1440" timestamp="1606384247326" />
     <state width="524" height="445" key="SwitcherDM/0.0.3440.1440/3440.25.2560.1415/-1440.565.1440.875@0.0.3440.1440" timestamp="1606384973753" />
-    <state x="1385" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1606386660734">
+    <state x="1385" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1606389556009">
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
-    <state x="1385" y="331" width="670" height="676" key="search.everywhere.popup/0.0.3440.1440/3440.0.2560.1440/-1440.540.1440.900@0.0.3440.1440" timestamp="1606386660734" />
+    <state x="1385" y="331" width="670" height="676" key="search.everywhere.popup/0.0.3440.1440/3440.0.2560.1440/-1440.540.1440.900@0.0.3440.1440" timestamp="1606389556009" />
   </component>
 </project>
