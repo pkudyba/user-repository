@@ -59,6 +59,7 @@ class UserService implements UserServiceInterface
         $user->update([
             "is_active" => $active,
         ]);
+        User::flushQueryCache();
 
         return $user;
     }
