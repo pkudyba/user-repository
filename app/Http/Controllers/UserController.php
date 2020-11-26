@@ -14,7 +14,8 @@ class UserController extends Controller
             $request->get('name'),
             $request->get('email'),
             $request->get('order_column', 'id'),
-            $request->get('order_direction', 'asc')
+            $request->get('order_direction', 'asc'),
+            $request->get('page_number', 1)
         );
     }
 
