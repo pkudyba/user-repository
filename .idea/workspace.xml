@@ -118,6 +118,7 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/rennokki/laravel-eloquent-query-cache" />
     </include_path>
   </component>
   <component name="ProjectId" id="1koue48jS9u0C2nwMsdgeOQ9UJZ" />
@@ -161,7 +162,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606379356607</updated>
-      <workItem from="1606379357672" duration="12805000" />
+      <workItem from="1606379357672" duration="16263000" />
     </task>
     <servers />
   </component>
@@ -178,19 +179,19 @@
     </state>
     <state x="1458" y="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.3440.1440/3440.0.2560.1440/-1440.540.1440.900@0.0.3440.1440" timestamp="1606381059118" />
     <state x="1458" y="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.3440.1440/3440.25.2560.1415/-1440.565.1440.875@0.0.3440.1440" timestamp="1606384958693" />
-    <state x="1526" y="434" key="NewPhpClassDialog" timestamp="1606384777091">
+    <state x="1526" y="434" key="NewPhpClassDialog" timestamp="1606395714780">
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
-    <state x="1526" y="434" key="NewPhpClassDialog/0.0.3440.1440/3440.0.2560.1440/-1440.540.1440.900@0.0.3440.1440" timestamp="1606381044102" />
+    <state x="1526" y="434" key="NewPhpClassDialog/0.0.3440.1440/3440.0.2560.1440/-1440.540.1440.900@0.0.3440.1440" timestamp="1606395714780" />
     <state x="1526" y="434" key="NewPhpClassDialog/0.0.3440.1440/3440.25.2560.1415/-1440.565.1440.875@0.0.3440.1440" timestamp="1606384777091" />
     <state width="524" height="445" key="SwitcherDM" timestamp="1606390836254">
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
     <state width="524" height="445" key="SwitcherDM/0.0.3440.1440/3440.0.2560.1440/-1440.540.1440.900@0.0.3440.1440" timestamp="1606390836254" />
     <state width="524" height="445" key="SwitcherDM/0.0.3440.1440/3440.25.2560.1415/-1440.565.1440.875@0.0.3440.1440" timestamp="1606384973753" />
-    <state x="1385" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1606392065419">
+    <state x="1385" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1606396122213">
       <screen x="0" y="0" width="3440" height="1440" />
     </state>
-    <state x="1385" y="331" width="670" height="676" key="search.everywhere.popup/0.0.3440.1440/3440.0.2560.1440/-1440.540.1440.900@0.0.3440.1440" timestamp="1606392065419" />
+    <state x="1385" y="331" width="670" height="676" key="search.everywhere.popup/0.0.3440.1440/3440.0.2560.1440/-1440.540.1440.900@0.0.3440.1440" timestamp="1606396122213" />
   </component>
 </project>
