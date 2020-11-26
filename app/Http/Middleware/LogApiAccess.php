@@ -17,8 +17,6 @@ class LogApiAccess
      */
     public function handle(Request $request, Closure $next)
     {
-//        Log::info("{$request->getMethod()}: {$request->getUri()}");
-
         return $next($request);
     }
 

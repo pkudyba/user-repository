@@ -35,6 +35,7 @@ class ActivateUserCommand extends Command
     {
         $userId = $this->argument('userId');
         $active = $this->argument('active');
+        $active = $active === 'true';
         $userService->activation($userId, $active);
 
         if($active){

@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ListUsersRequest;
 use App\Http\Requests\StoreUserRequest;
 use App\Services\UserServiceInterface;
-use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function index(Request $request, UserServiceInterface $userService)
+    public function index(ListUsersRequest $request, UserServiceInterface $userService)
     {
         return $userService->listUsers(
             $request->get('name'),
