@@ -2,18 +2,22 @@
 
 namespace App\Services;
 
+use App\Events\UserCreatedEvent;
 use App\Models\User;
 
 class UserService implements UserServiceInterface
 {
     public function createUser(string $name, string $email, string $password): User
     {
-        return User::create([
+        $user = User::create([
             "name" => $name,
             "email" => $email,
             "is_active" => false,
             "password" => bcrypt($password),
         ]);
+        UserCreatedEvent::dispatch();
+
+        return $user;
     }
 
     public function listUsers(?string $name, ?string $email)
